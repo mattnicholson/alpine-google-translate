@@ -1,0 +1,36 @@
+h1 {
+  text-decoration: underline;
+}
+
+/*
+
+Google translate styles
+
+*/
+
+/* Remove the nudge when the translate banner is visible */
+
+body{
+  top: 0 !important; /* Google translate adds top spacing for a banner */
+}
+
+/* Hide the banner when it's being translated */
+.skiptranslate{
+  display: none!important;
+}
+
+/* Hide the actual dropdown (we are controlling programmatically) */
+#google_translate_element{
+  display: none!important;
+}
+
+/* Hide Loading idicator */
+#goog-gt-tt + div{
+  display: none;
+}
+
+/*
+
+End Google translate
+
+*/
